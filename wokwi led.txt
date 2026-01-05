@@ -1,0 +1,56 @@
+
+const int TRICOLOR_PIN_GREEN=13;
+const int TRICOLOR_PIN_RED=12;
+
+
+
+
+
+void setup(){
+  pinMode(TRICOLOR_PIN_GREEN,OUTPUT);
+  pinMode(TRICOLOR_PIN_RED,OUTPUT);
+
+
+
+
+
+
+
+}
+
+
+void loop(){
+
+  //digitalWrite(TRICOLOR_PIN_GREEN,LOW);
+  //digitalWrite(TRICOLOR_PIN_RED,LOW);
+  //delay(1000);
+  
+  //digitalWrite(TRICOLOR_PIN_GREEN,HIGH);
+  //digitalWrite(TRICOLOR_PIN_RED,HIGH);
+  //delay(1000);
+
+
+ 
+  
+  //digitalWrite(TRICOLOR_PIN_GREEN,LOW);
+  //delay(1000);
+  //digitalWrite(TRICOLOR_PIN_RED,HIGH);
+  //delay(1000);
+  //digitalWrite(TRICOLOR_PIN_RED,LOW);
+  //delay(1000);
+
+
+  for(int i=0;i<1023;i++)
+  {
+analogWrite(TRICOLOR_PIN_GREEN,i);
+delay(100);
+  }
+  delay(1000);
+
+    for(int i=1023;i>0;i--)
+  {
+analogWrite(TRICOLOR_PIN_GREEN,i);
+delay(100);
+  }
+  delay(1000);
+}
